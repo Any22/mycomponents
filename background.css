@@ -1,0 +1,28 @@
+.wrapper {
+  overflow: hidden;
+}
+.sliding-background {
+  height: 960px;
+  width: 6000px;
+}
+.sliding-background {
+  background: url("bkimage.jpeg") repeat-x;
+  height: 500px;
+  width: 5076px;
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+.sliding-background {
+  background: url("boots.jpg");
+  background: url("bkimage.jpeg") repeat-x;
+  height: 560px;
+  width: 5076px;
+  animation: slide 60s linear infinite;
+}
+/* https://css-tricks.com/creating-a-css-sliding-background-effect/ */
