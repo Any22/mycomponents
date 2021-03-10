@@ -1,0 +1,56 @@
+.main
+{
+    border:50px solid gray;
+    /* set the big box to screen*/
+    margin: auto;
+    width: 600px;
+    height:100px;
+    padding-bottom: 20px;
+    background-color: gray;
+    color: honeydew;
+   
+   
+}
+.b1
+{
+    border:1px solid black;
+    /* craeting outline  */
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+    /* the 4 green boxes are moved on right,(by default they are verticle) */
+    float: left;
+    margin:10px;
+    width: 75px;
+    background-color: green;
+    color: honeydew;
+    
+}
+
+.b2
+{
+    float: left;
+    margin: 10px;
+    width: 75px;
+    background-color: green;
+    color: honeydew;
+    
+}
+
+.b3
+{   margin:10px;
+    float: left;
+    width: 75px;
+    background-color: green;
+    color: honeydew;
+    
+}
+.b4
+{
+    margin:10px;
+    float:left;
+    width: 75px;
+    background-color: green;
+    color: honeydew;
+    
+}

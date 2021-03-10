@@ -1,0 +1,7 @@
+.container {
+  background-color: lightslategray;
+  width: 100vw;
+}
+.card-body {
+  background-color: pink;
+}
