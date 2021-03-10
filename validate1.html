@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="validate1.css"> 
+
+    
+    <title>validate</title>
+</head>
+<body>
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Task</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <span id="mandatorField" style="color: white;">*</span>
+                  <label for="Inputname">Name</label>
+                  <input type="text" class="form-control" id="tname" required minlength= '2' maxlength='20'>
+                  <span id="nmErrMsg"></span>
+                </div>
+
+                <div class="form-group">
+                    <span id="mandatorField1" style="color: white;">*</span>
+                    <label for="InputDetails">Description</label>
+                    <textarea class="form-control" id="des" rows=3 required minlength= '15' maxlength='25'></textarea>
+                    <span id="nmErrMsg1"></span>
+                  </div>
+                 
+                <div class="form-group">
+                    <span id="mandatorField2" style="color: white;">*</span>
+                    <label for="Assingee">Assigned to</label>
+                    <input type="text" class="form-control" id="assignee" required minlength= '2' maxlength='20'>
+                    <span id="nmErrMsg2"></span>
+                </div>
+
+                <div class="form-group">
+                  <span id="mandatorField3" style="color: white;">*</span>
+                  <label for="duedate">Due Date</label>
+                  <input type="date" class ="form-control" id="dDate"  min=new Date() required>
+                  <span id="nmErrMsg3"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" id="Select1">
+                    <option>Please select</option>
+                    <option>To Do</option>
+                    <option>Review</option>
+                    <option>In Progress</option>
+                    <option>Done</option>
+                  </select>
+                  <span id="nmErrMsg4"></span>
+                </div>
+              </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="sbmt1">Submit</button>
+                </div>
+
+           
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+                    <script src="validate1.js"></script>   
+                  
+            </body>
+            </html>
